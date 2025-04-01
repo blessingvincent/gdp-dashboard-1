@@ -25,16 +25,16 @@ def get_gdp_data():
     DATA_FILENAME = Path(__file__).parent/'data/gdp_data.csv'
     raw_gdp_df = pd.read_csv(DATA_FILENAME)
 
-    MIN_YEAR = 1960
-    MAX_YEAR = 2022
+    MIN_YEAR = 2022
+    MAX_YEAR = 2030
 
     # The data above has columns like:
     # - Country Name
     # - Country Code
     # - [Stuff I don't care about]
-    # - GDP for 1960
-    # - GDP for 1961
-    # - GDP for 1962
+    # - GDP for 2022
+    # - GDP for 2023
+    # - GDP for 2030
     # - ...
     # - GDP for 2022
     #
